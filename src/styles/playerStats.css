@@ -1,0 +1,95 @@
+#playerStats {
+    width: 15rem;
+    height: 4rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 3rem;
+    left: 3rem;
+}
+
+.emiru-banner {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 10vh;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.media-Icons {
+    height: 20vh;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    transform: translateY(80%);
+    left: 1rem;
+}
+
+
+.mediaSpacing {
+    padding: 10px;
+}
+
+.mediaIcon:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fef4f5;
+}
+
+#playerStats__lines {
+    display: flex;
+    align-items: center;
+}
+
+#playerStats__lines__thick {
+    display: block;
+    background-color: white;
+    height: 0.2rem;
+    width: 8.75rem;
+}
+
+#playerStats__lines__thin {
+    display: block;
+    background-color: lightgray;
+    height: 0.1rem;
+    width: 6.2rem;
+}
+
+@media (max-width: 1100px) {
+    #playerStats {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8rem;
+        height: 2.5rem;
+        top: 2rem;
+    } 
+
+    .emiru-banner {
+        display: none;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    h2, h3, p {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 700px) {
+    .media-Icons {
+        display: none;
+    }
+}
